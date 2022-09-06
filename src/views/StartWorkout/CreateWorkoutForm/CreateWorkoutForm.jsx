@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaEllipsisV } from 'react-icons/fa';
+import { FaEllipsisV, FaTrashAlt } from 'react-icons/fa';
 
 import styles from './CreateWorkoutForm.module.scss';
 
@@ -30,28 +30,205 @@ const CreateWorkoutForm = () => {
                         </div>
                         <div className={styles.workoutFormBody}>
                             <div className={styles.exercise}>
-                                <div className={styles.exerciseHeading}>
-                                    Exercise Name
+                                <h3 className="heading-tertiary">
+                                    Bench (Barbell)
+                                </h3>
+
+                                {/* SETS */}
+                                <div className={`${styles.exerciseSetsBox}`}>
+                                    <div className={`${styles.exerciseSet}`}>
+                                        <div
+                                            className={styles.exerciseSetHeader}
+                                        >
+                                            <h4 className="heading-quaternary">
+                                                Set
+                                            </h4>
+                                            <h4 className="heading-quaternary">
+                                                lbs
+                                            </h4>
+                                            <h4 className="heading-quaternary">
+                                                Reps
+                                            </h4>
+                                        </div>
+                                        <div
+                                            className={
+                                                styles.exerciseSetContent
+                                            }
+                                        >
+                                            <p>1</p>
+                                            <Input
+                                                type="Number"
+                                                placeholder={''}
+                                                classes="input input--set-info"
+                                            />
+                                            <Input
+                                                type="Number"
+                                                placeholder={''}
+                                                classes="input input--set-info"
+                                            />
+                                            <Button
+                                                classes="btn btn--icon"
+                                                btnText={<FaTrashAlt />}
+                                            />
+                                        </div>
+                                        <div
+                                            className={
+                                                styles.exerciseSetContent
+                                            }
+                                        >
+                                            <p>1</p>
+                                            <Input
+                                                type="Number"
+                                                placeholder={''}
+                                                classes="input input--set-info"
+                                            />
+                                            <Input
+                                                type="Number"
+                                                placeholder={''}
+                                                classes="input input--set-info"
+                                            />
+                                            <Button
+                                                classes="btn btn--icon"
+                                                btnText={<FaTrashAlt />}
+                                            />
+                                        </div>
+                                        <div
+                                            className={
+                                                styles.exerciseSetContent
+                                            }
+                                        >
+                                            <p>1</p>
+                                            <Input
+                                                type="Number"
+                                                placeholder={''}
+                                                classes="input input--set-info"
+                                            />
+                                            <Input
+                                                type="Number"
+                                                placeholder={''}
+                                                classes="input input--set-info"
+                                            />
+                                            <Button
+                                                classes="btn btn--icon"
+                                                btnText={<FaTrashAlt />}
+                                            />
+                                        </div>
+                                        <Button
+                                            classes="btn btn--workout-form btn--add-set"
+                                            btnText="Add Set"
+                                        />
+                                    </div>
                                 </div>
-                                <div className={styles.exerciseSets}>Sets</div>
-                                <div className={styles.exerciseBtns}>
-                                    <Button
-                                        classes="btn btn--workout-form btn--add-set"
-                                        btnText="Add Set"
-                                    />
-                                    <Button
-                                        classes="btn btn--workout-form btn--remove-set"
-                                        btnText="Remove Set"
-                                    />
+                                <Button
+                                    classes="btn btn--workout-form btn--remove-set"
+                                    btnText="Remove Exercise"
+                                />
+                            </div>
+
+                            <div className={styles.exercise}>
+                                <h3 className="heading-tertiary">
+                                    Bench (Barbell)
+                                </h3>
+
+                                {/* SETS */}
+                                <div className={`${styles.exerciseSetsBox}`}>
+                                    <div className={`${styles.exerciseSet}`}>
+                                        <div
+                                            className={styles.exerciseSetHeader}
+                                        >
+                                            <h4 className="heading-quaternary">
+                                                Set
+                                            </h4>
+                                            <h4 className="heading-quaternary">
+                                                lbs
+                                            </h4>
+                                            <h4 className="heading-quaternary">
+                                                Reps
+                                            </h4>
+                                        </div>
+                                        <div
+                                            className={
+                                                styles.exerciseSetContent
+                                            }
+                                        >
+                                            <p>1</p>
+                                            <Input
+                                                type="Number"
+                                                placeholder={''}
+                                                classes="input input--set-info"
+                                            />
+                                            <Input
+                                                type="Number"
+                                                placeholder={''}
+                                                classes="input input--set-info"
+                                            />
+                                            <Button
+                                                classes="btn btn--icon"
+                                                btnText={<FaTrashAlt />}
+                                            />
+                                        </div>
+                                        <div
+                                            className={
+                                                styles.exerciseSetContent
+                                            }
+                                        >
+                                            <p>1</p>
+                                            <Input
+                                                type="Number"
+                                                placeholder={''}
+                                                classes="input input--set-info"
+                                            />
+                                            <Input
+                                                type="Number"
+                                                placeholder={''}
+                                                classes="input input--set-info"
+                                            />
+                                            <Button
+                                                classes="btn btn--icon"
+                                                btnText={<FaTrashAlt />}
+                                            />
+                                        </div>
+                                        <div
+                                            className={
+                                                styles.exerciseSetContent
+                                            }
+                                        >
+                                            <p>1</p>
+                                            <Input
+                                                type="Number"
+                                                placeholder={''}
+                                                classes="input input--set-info"
+                                            />
+                                            <Input
+                                                type="Number"
+                                                placeholder={''}
+                                                classes="input input--set-info"
+                                            />
+                                            <Button
+                                                classes="btn btn--icon"
+                                                btnText={<FaTrashAlt />}
+                                            />
+                                        </div>
+                                        <Button
+                                            classes="btn btn--workout-form btn--add-set"
+                                            btnText="Add Set"
+                                        />
+                                    </div>
                                 </div>
+                                <Button
+                                    classes="btn btn--workout-form btn--remove-set"
+                                    btnText="Remove Exercise"
+                                />
                             </div>
                         </div>
-                        <div className={styles.workoutFormFooter}>
+
+                        {/* FOR SMALLER SCREENS */}
+                        {/* <div className={styles.workoutFormFooter}>
                             <Button
                                 classes="btn btn--workout-form btn--add-exercise"
                                 btnText="Add Exercise"
                             />
-                        </div>
+                        </div> */}
                     </div>
                     <div>hello</div>
                 </div>

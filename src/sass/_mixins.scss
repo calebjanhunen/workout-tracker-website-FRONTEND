@@ -1,0 +1,7 @@
+@mixin setGrid {
+    display: grid;
+    grid-template-columns: 3rem 6.4rem 6.4rem 2rem;
+    column-gap: 1.6rem;
+    justify-content: center;
+    justify-items: center;
+}

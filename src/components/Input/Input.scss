@@ -1,7 +1,15 @@
 @import 'src/sass/_variables.scss';
 
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
 .input {
     font-family: inherit;
+    color: inherit;
 
     &::placeholder {
         color: $font-color-grey-light;
@@ -14,5 +22,15 @@
     &--workout-name {
         border: none;
         font-size: 2.4rem;
+        width: 90%;
+    }
+
+    &--set-info {
+        border: none;
+        background-color: #efecf9;
+        border-radius: $border-radius-default;
+
+        width: 100%;
+        padding-left: 1.6rem;
     }
 }
