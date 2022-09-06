@@ -1,0 +1,37 @@
+@import 'src/sass/variables.scss';
+
+.btn {
+    font-family: inherit;
+    cursor: pointer;
+    border: none;
+    background: none;
+    color: inherit;
+
+    &--icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &--workout-form {
+        width: 100%;
+        border-radius: $border-radius-default;
+        padding: 0.4rem;
+        font-weight: 700;
+    }
+
+    &--add-set {
+        background-color: $color-green;
+    }
+    &--remove-set {
+        background-color: #ffa8a8;
+    }
+
+    &--add-exercise {
+        background-color: $color-primary-light;
+    }
+
+    &:hover {
+        filter: brightness(90%);
+    }
+}

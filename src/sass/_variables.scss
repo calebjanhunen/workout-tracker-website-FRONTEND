@@ -1,12 +1,24 @@
-// COLORS
+// FONT SIZE
+$default-font: 1.6rem;
+
+/****************COLORS*****************/
+// UI COLORS
+$color-primary-light: #bad4ed;
 $color-primary: #1971c2;
 
-$color-white: #fff;
+$color-green: #8ce99a;
 
+//GREYS
+$color-white: #fff;
+$color-grey-light: #6f6f6f;
+
+//SHADES
 $color-black: #000;
 
 // FONT COLORS
 $font-color-primary: #333;
 
-// FONT SIZE
-$default-font: 1.6rem;
+$font-color-grey-light: #aaa;
+
+/****************OTHERS*****************/
+$border-radius-default: 1rem;

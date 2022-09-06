@@ -3,6 +3,30 @@
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
 */
 
+// margins
 .margin-bottom-big {
     margin-bottom: 8rem;
+}
+
+.margin-bottom-md {
+    margin-bottom: 6.4rem;
+}
+
+// grid
+.grid {
+    display: grid;
+}
+
+.grid--2-cols {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 9.6rem;
+}
+
+.container {
+    max-width: 110rem;
+    padding: 1.6rem 3.2rem 0 3.2rem;
+    margin: 0 auto;
+}
+
+.icon {
 }

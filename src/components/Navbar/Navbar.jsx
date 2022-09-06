@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import './Navbar.scss';
 
@@ -6,37 +7,40 @@ const Navbar = () => {
     return (
         <header className="header">
             <div className="logo-box">
-                <a href="#" className="logo-box__link">
+                <Link to="/" className="logo-box__link">
                     Workout Tracker
-                </a>
+                </Link>
             </div>
 
             <nav className="nav">
                 <ul className="nav__list">
                     <li className="nav__list-item">
-                        <a href="#" className="nav__list-link">
+                        <Link to="/start-workout" className="nav__list-link">
                             Start Workout
-                        </a>
+                        </Link>
                     </li>
                     <li className="nav__list-item">
-                        <a href="#" className="nav__list-link">
+                        <Link to="/workout-history" className="nav__list-link">
                             Workout History
-                        </a>
+                        </Link>
                     </li>
                     <li className="nav__list-item">
-                        <a href="#" className="nav__list-link">
+                        <Link
+                            to="/workout-templates"
+                            className="nav__list-link"
+                        >
                             Workout Templates
-                        </a>
+                        </Link>
                     </li>
                     <li className="nav__list-item">
-                        <a href="#" className="nav__list-link">
+                        <Link to="/exercises" className="nav__list-link">
                             Exercises
-                        </a>
+                        </Link>
                     </li>
                     <li className="nav__list-item">
-                        <a href="#" className="nav__list-link">
+                        <Link to="/explore" className="nav__list-link">
                             Explore
-                        </a>
+                        </Link>
                     </li>
                 </ul>
             </nav>

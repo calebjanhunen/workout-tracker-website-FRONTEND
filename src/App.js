@@ -1,12 +1,30 @@
-import Navbar from 'components/Navbar/Navbar';
-import { Home } from './views';
+import { Route, Routes } from 'react-router-dom';
+
+import Layout from 'components/Layout';
+import {
+    CreateWorkoutForm,
+    Exercises,
+    Explore,
+    Home,
+    WorkoutHistory,
+    WorkoutTemplates,
+} from './views';
 
 function App() {
     return (
-        <div className="App">
-            <Navbar />
-            <Home />
-        </div>
+        <Routes>
+            <Route path="/" element={<Layout />}>
+                <Route index element={<Home />} />
+                <Route path="start-workout" element={<CreateWorkoutForm />} />
+                <Route path="workout-history" element={<WorkoutHistory />} />
+                <Route
+                    path="workout-templates"
+                    element={<WorkoutTemplates />}
+                />
+                <Route path="exercises" element={<Exercises />} />
+                <Route path="explore" element={<Explore />} />
+            </Route>
+        </Routes>
     );
 }
 

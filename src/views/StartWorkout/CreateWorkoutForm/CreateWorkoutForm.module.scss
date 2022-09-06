@@ -1,0 +1,44 @@
+@import 'src/sass/_variables.scss';
+@import 'src/sass/_utilities.scss';
+
+.createWorkoutSection {
+    // background-color: #f8f9fa;
+}
+
+.workoutForm {
+    background-color: $color-white;
+    border-radius: $border-radius-default;
+    padding: 2rem;
+    // box-shadow: 0 2.4rem 4.8rem rgba($color-black, 0.08);
+    border: 0.1rem solid $color-grey-light;
+
+    &Header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 0.1rem solid $color-grey-light;
+        padding-bottom: 2rem;
+    }
+
+    &Body {
+        padding: 2.4rem 0;
+        border-bottom: 0.1rem solid $color-grey-light;
+
+        .exercise {
+            &Heading {
+            }
+            &Sets {
+            }
+
+            &Btns {
+                display: flex;
+                flex-direction: column;
+                gap: 1.2rem;
+            }
+        }
+    }
+
+    &Footer {
+        padding-top: 1.6rem;
+    }
+}

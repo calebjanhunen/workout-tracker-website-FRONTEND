@@ -17,6 +17,7 @@
         font-size: 3.2rem;
         color: $font-color-primary;
         font-weight: 700;
+        color: $color-primary;
     }
 }
 
@@ -30,8 +31,7 @@
         &-item {
         }
 
-        &-link:link,
-        &-link:visited {
+        &-link {
             color: $font-color-primary;
             text-decoration: none;
             font-weight: 600;
