@@ -1,0 +1,27 @@
+@import 'src/sass/_variables.scss';
+
+.addExerciseList {
+    border: 0.2rem solid $color-primary;
+    border-radius: $border-radius-default;
+    background-color: $color-white;
+    padding: 2rem;
+    width: 85%;
+
+    &Header {
+        display: grid;
+        grid-template-columns: 60fr 40fr;
+        column-gap: 1.2rem;
+        row-gap: 1.2rem;
+
+        .bodyPartFilter {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+}
+
+@media (max-width: $small-laptop-width) {
+    .addExerciseList {
+        display: none;
+    }
+}

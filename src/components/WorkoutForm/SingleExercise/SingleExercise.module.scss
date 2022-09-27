@@ -1,0 +1,32 @@
+@import 'src/sass/_variables.scss';
+@import 'src/sass/_utilities.scss';
+@import 'src/sass/_mixins.scss';
+
+.exercise {
+    padding-top: 1.6rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+
+    &Heading {
+    }
+
+    &SetsBox {
+        // padding: 1.6rem 0;
+    }
+
+    &Set {
+        &Header {
+            @include setGrid;
+        }
+        &Content {
+            padding: 0.4rem 0;
+            @include setGrid;
+
+            &:nth-child(2) {
+                padding-top: 1.2rem;
+            }
+        }
+    }
+}

@@ -33,4 +33,12 @@ input[type='number']::-webkit-outer-spin-button {
         width: 100%;
         padding-left: 1.6rem;
     }
+
+    &--search-exercise {
+        border-radius: $border-radius-default;
+        border: 0.1rem solid $color-primary;
+        padding: 0.8rem 0.2rem;
+
+        grid-column: 1/2;
+    }
 }

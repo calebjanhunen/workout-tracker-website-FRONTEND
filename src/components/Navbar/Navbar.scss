@@ -1,40 +1,81 @@
 @import 'src/sass/_variables.scss';
 
 .header {
-    background-color: $color-white;
-    box-shadow: 0 1.2rem 3.2rem rgba($color-black, 0.15);
-    height: 8rem;
-    padding: 0 4.8rem;
+    height: 100vh;
+    background-color: #eee;
+    padding: 2rem;
 
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 2.4rem;
 
-.logo-box {
-    &__link {
-        text-decoration: none;
-        font-size: 3.2rem;
-        color: $font-color-primary;
-        font-weight: 700;
-        color: $color-primary;
+    .logo-box {
+        &__link {
+            text-decoration: none;
+            color: #40c057;
+
+            display: flex;
+            align-items: center;
+            gap: 1.2rem;
+
+            span {
+                font-size: 2.4rem;
+                font-weight: 700;
+                color: $font-color-primary;
+            }
+        }
     }
-}
 
-.nav {
-    &__list {
-        list-style: none;
+    .nav {
+        &__list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 2.4rem;
+            padding-top: 1.6rem;
 
-        display: flex;
-        gap: 3.2rem;
+            &-item {
+            }
 
-        &-item {
+            &-link {
+                padding: 1.2rem 2.4rem;
+                border-radius: 999rem;
+                color: $font-color-primary;
+                text-decoration: none;
+                font-weight: 500;
+                font-size: 1.8rem;
+
+                display: inline-flex;
+                align-items: center;
+                gap: 1.2rem;
+
+                transition: background-color 0.3s;
+
+                &:hover {
+                    background-color: $color-primary-light-2;
+                }
+            }
+            .active {
+                font-weight: 700;
+            }
+        }
+    }
+
+    .profile {
+        padding: 1.2rem 2.4rem;
+        margin-top: auto;
+        border-radius: 999rem;
+        transition: background-color 0.3s;
+
+        &__username {
+            font-size: 1.8rem;
+            font-weight: 700;
         }
 
-        &-link {
-            color: $font-color-primary;
-            text-decoration: none;
-            font-weight: 600;
+        &:hover {
+            cursor: pointer;
+            background-color: $color-primary-light-2;
         }
     }
 }

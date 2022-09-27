@@ -3,8 +3,9 @@ $default-font: 1.6rem;
 
 /****************COLORS*****************/
 // UI COLORS
-$color-primary-light: #b197fc;
-$color-primary: #5f3dc4;
+$color-primary-light-2: #ebfbee;
+$color-primary-light: #b2f2bb;
+$color-primary: #40c057;
 
 $color-green: #8ce99a;
 
@@ -16,9 +17,12 @@ $color-grey-light: #6f6f6f;
 $color-black: #000;
 
 // FONT COLORS
-$font-color-primary: #555;
+$font-color-primary: #333;
 
 $font-color-grey-light: #aaa;
 
 /****************OTHERS*****************/
 $border-radius-default: 1rem;
+
+/***********MEDIA QUERY WIDTHS*********/
+$small-laptop-width: 75em;
